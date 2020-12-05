@@ -1,0 +1,131 @@
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/e6ba6f46d7.js" crossorigin="anonymous"></script>
+    <style>
+@import url(https://fonts.googleapis.com/css2?family=Fira+Mono&family=Fira+Sans&display=swap);
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.headers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Fira Mono", monospace;
+  font-size: 5em;
+  flex-grow: 999;
+}
+
+h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.highlight, .contact:hover > i {
+  background-image: linear-gradient(-45deg, #f08000, #f02020);
+  background-clip: text;
+  color: transparent;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: border-color 0.5s;
+  margin: 0 10px;
+  padding: 10px;
+  min-width: 7em;
+  min-height: 7em;
+  font-family: "Fira Sans", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+.contact:hover {
+  border-color: black;
+}
+.contact i {
+  font-size: 3em;
+  transition: color 0.5s, background 0.5s;
+  background: #000;
+  background-clip: text;
+  margin-bottom: 5px;
+}
+
+a.contact span, a.contact small {
+  text-decoration: underline;
+}
+
+.headers > h1 {
+  animation: slide-in 1.5s;
+}
+
+.headers > h2 {
+  margin-top: 100vh;
+  animation: slide-in 1.5s ease 2s forwards;
+}
+
+.contacts {
+  opacity: 0%;
+  animation: fade-in 2s ease 4s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    margin-top: 100vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+<div class="headers">
+    <h1>Hi.</h1>
+    <h2>I'm <span class="highlight">Artemis</span>.</h2>
+</div>
+<div class="contacts">
+    <a class="contact" href="https://www.reddit.com/user/artemisdev21">
+        <i class="fa fa-reddit"></i>
+        <span>u/artemisdev21</span>
+    </a>
+    <a class="contact" href="https://github.com/artemis21/">
+        <i class="fa fa-github"></i>
+        <span>@Artemis21</span>
+    </a>
+    <a class="contact" href="https://stackoverflow.com/users/9445557/artemis">
+        <i class="fa fa-stack-overflow"></i>
+        <span>Artemis</span>
+    </a>
+    <a class="contact" href="mailto:artemisdev21@gmail.com">
+        <i class="fa fa-envelope"></i>
+        <span>artemisdev21</span>
+        <small>@gmail.com</small>
+    </a>
+    <div class="contact">
+        <i class="fab fa-discord"></i>
+        <span>Artemis</span>
+        <small>#3000</small>
+    </div>
+</div>
+</body>
+</html>
