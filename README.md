@@ -1,7 +1,7 @@
-Hi! I'm Artemis, she/her pronouns. I write code for fun, mainly in Rust these
-days but still with a fair amount of Python. I also know Javascript pretty well
-and sometimes write web frontends. Historically, I have a lot of experience in
-writing Discord bots, but I don't do that so much anymore.
+Hi! I'm Miriam (aka Artemis), she/her pronouns. I write code for fun, mainly in
+Rust these days but still with a fair amount of Python. I also know Javascript
+pretty well and sometimes write web frontends. Historically, I have a lot of
+experience in writing Discord bots, but I don't do that so much anymore.
 
 You can find my contact information at [arty.li].
 
